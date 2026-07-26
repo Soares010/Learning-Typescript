@@ -34,3 +34,15 @@ class Employee extends Person {
     return this.name;
   }
 }
+
+// #BONÚS nova maneira de declarar classes
+
+class PersonRefect implements IPerson {
+  id: number;
+  constructor(id: number, name: string, age: number) {
+    this.id = id;
+  }
+  sayMyName(): string {
+    return "Mário";
+  }
+}
