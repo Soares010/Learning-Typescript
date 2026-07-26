@@ -35,5 +35,12 @@ var Direction;
 // Assim esse direction vale 1
 const direction = Direction.Up;
 console.log(direction);
+// Aprendendo sobre type assertions
+// É basicamento quando a gente quer mudar o tipo de uma variável, ou tratar uma variável que é de um tipo como um tipo diferente!
+const productName = "Boné";
+// Eu quero tratar essa variável como um outro tipo
+// let itemId: string = productName;
+// Tem outra forma de fazer
+let itemId = productName;
 console.log(age);
 //# sourceMappingURL=index.js.map

@@ -1,0 +1,9 @@
+// Manipulando funções
+const sum = (x: number, y: number): string => (x + y).toString();
+
+const value = sum(1, 2);
+
+// Manipulando o retorno das funções
+const log = (message: string): void => console.log(message);
+
+
