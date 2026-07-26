@@ -14,6 +14,7 @@ type User = {
   password?: string;
   //   orders: string[]; //Definimos aqui uma lista de strings;
   orders: Order[]; //Definimos aqui uma lista de strings;
+  register?(): string;
 };
 
 const user: User = {
@@ -39,4 +40,15 @@ const author: Author & User = {
   books: ["Js", "React"],
   email: "Mn@gmail.com",
   orders: [{ productId: "2", price: 12000 }],
+};
+
+// Aprendendo sobre interfaces
+interface UserInterface {
+  firstName: string;
+  email: string;
+}
+
+const emailUser: UserInterface = {
+  email: "Mn@gmail.com",
+  firstName: "Mário",
 };
